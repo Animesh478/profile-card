@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    box-shadow: 0 5px 5px rgb(171, 162, 162);
+    background-color: #fff;  
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    background-color: #4070f4;
+    height: 135px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 25px 25px 0 0;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #4070f4;
+    padding: 3px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.image .profile-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff; 
+    
+}
+.profile-card .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.details .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .contact{
+    display: flex;
+    /* align-items: center; */
+    margin-top: 15px;
+}
+.contact .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 5px;
+    background-color: #4070f4;
+    color: #fff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.buttons .button{
+    background-color: #4070f4;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 2 ease;
+
+}
+.buttons .button:hover{
+    background-color: #064bf1;
+    font-size: 20px;
+}
+.profile-card .analytics{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.analytics .data{
+    /* margin: 0 10px; */
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+    padding: 0 20px;
+}
+.data i{
+    padding-right: 5px;
+}
+.data:last-child{
+    border-right: none;
+}
